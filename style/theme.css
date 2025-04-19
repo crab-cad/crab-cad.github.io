@@ -1,0 +1,87 @@
+:root {
+    font-family: "Segoe UI", Cantarell, Calibri, Ubuntu, sans-serif;
+    color-scheme: light dark;
+
+    /* colors */
+    --backdrop: light-dark(rgb(133, 133, 133), rgb(28, 28, 28));
+    --text-color: light-dark(black, white);
+
+    background-color: var(--backdrop);
+    min-width: 600px;
+}
+
+body {
+    margin: 0 0 0.2em 0;
+}
+
+#title_area {
+    display: flex;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: #363836;
+}
+
+#title {
+    font-size: 8em;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+#subtitle {
+    color: var(--text-color);
+    font-weight: normal;
+    transform: translateY(-6em);
+}
+
+#crab_icon {
+    position: relative;
+    right: 4.2em;
+    top: 3.1em;
+
+    font-size: xx-large;
+
+    animation: crab_rave 1.1s alternate infinite ease-in-out;
+}
+
+@media (prefers-reduced-motion) {
+    #crab_icon {
+        animation: crab_rave_reduced_motion 2s alternate infinite ease-in-out;
+    }
+}
+
+@keyframes crab_rave {
+    0% { transform: rotate(-35deg); }
+    100% { transform: rotate(35deg); }
+}
+
+@keyframes crab_rave_reduced_motion {
+    0% { transform: rotate(-25deg); }
+    100% { transform: rotate(25deg); }
+}
+
+#main_projects {
+    display: grid;
+    margin-top: 0.35em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+
+    column-count: 3;
+    gap: 0.35em;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.projects_item {
+    color: var(--text-color);
+    border-radius: 8px;
+    border: solid 2.5px #4c4949;
+
+    font-size: 2em;
+    text-align: center;
+}
+
+.project_link {
+    text-decoration-line: none;
+}
