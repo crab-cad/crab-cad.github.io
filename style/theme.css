@@ -3,8 +3,9 @@
     color-scheme: light dark;
 
     /* colors */
-    --backdrop: light-dark(rgb(133, 133, 133), rgb(28, 28, 28));
-    --text-color: light-dark(black, white);
+    --backdrop: light-dark(rgb(240, 240, 240), rgb(28, 28, 28));
+    --text-color: light-dark(rgb(16, 16, 16), white);
+    --title-backdrop: light-dark(rgb(220, 220, 220), rgb(33, 33, 33));
 
     background-color: var(--backdrop);
     min-width: 600px;
@@ -21,7 +22,7 @@ body {
     align-items: center;
     flex-direction: column;
 
-    background: #2d2d2d;
+    background: linear-gradient(180deg, var(--title-backdrop) 0%, var(--backdrop) 100%);
 }
 
 #title {
