@@ -21,6 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: -2.1em;
 
     background: linear-gradient(180deg, var(--title-backdrop) 0%, var(--backdrop) 100%);
 }
