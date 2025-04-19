@@ -3,9 +3,9 @@
     color-scheme: light dark;
 
     /* colors */
-    --backdrop: light-dark(rgb(240, 240, 240), rgb(28, 28, 28));
+    --backdrop: light-dark(rgb(230, 230, 230), rgb(28, 28, 28));
     --text-color: light-dark(rgb(16, 16, 16), white);
-    --title-backdrop: light-dark(rgb(220, 220, 220), rgb(33, 33, 33));
+    --title-backdrop: light-dark(rgb(215, 215, 215), rgb(33, 33, 33));
 
     background-color: var(--backdrop);
     min-width: 600px;
