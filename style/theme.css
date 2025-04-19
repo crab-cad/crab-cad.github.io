@@ -9,6 +9,14 @@
 
     background-color: var(--backdrop);
     min-width: 600px;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+    display: none;
 }
 
 body {
