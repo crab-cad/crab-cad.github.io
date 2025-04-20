@@ -105,10 +105,32 @@ body {
     border-radius: 8px;
     border: solid 2.5px light-dark(#3c3c3c, #4c4c4c);
 
-    font-size: 2em;
     text-align: center;
+}
+
+.project_title {
+    font-size: 3.1em;
+    margin: 0.83em 0 0.41em 0;
 }
 
 .project_link {
     text-decoration-line: none;
+}
+
+.maintainer {
+    display: flex;
+    height: 58px;
+    text-align: center;
+    justify-content: center;
+}
+
+.maintainer_title {
+    font-size: 1.2em;
+    margin: 0.4em 0 0 0.4em;
+}
+
+.maintainer_icon {
+    margin: -0.5625em 0.5em 0.5625em;
+    width: 58px;
+    height: 58px;
 }
