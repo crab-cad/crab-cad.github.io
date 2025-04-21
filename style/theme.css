@@ -90,13 +90,14 @@ body {
     #main_projects {
         column-count: 3;
         grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: repeat(2, minmax(0, 1fr));
     }
 }
 
 @media only screen and (max-device-width: 480px) {
     #main_projects {
         column-count: 1;
-        grid-template-rows: repeat(3, minmax(0, 1fr));
+        grid-template-rows: repeat(6, minmax(0, 1fr));
     }
 }
 
